@@ -65,3 +65,21 @@ License & Contact
 - Add your LICENSE file if you plan to publish publicly.
 - For help, contact the project owner.
 
+Sample Data & CI
+- A tiny, anonymized sample generator is included at `scripts/generate_sample.py`.
+- To create the sample locally:
+
+```bash
+python scripts/generate_sample.py
+```
+
+- This writes `samples/sample_keypoints.npy` and `splits/sample_manifest.csv`.
+- A GitHub Actions workflow (`.github/workflows/ci.yml`) runs the generator and the pytest smoke test on push/PR.
+
+Run tests locally:
+
+```bash
+pip install -r requirements-dev.txt
+pytest tests/test_sample.py -q
+```
+
