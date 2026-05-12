@@ -1,0 +1,90 @@
+# Python cache and environment
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.venv/
+venv/
+env/
+.venv-cuda/
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+
+# Logs and local runtime
+*.log
+.ipynb_checkpoints/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model checkpoints and exports
+checkpoints/
+checkpoints_filtered/
+fewshot_checkpoints_4_19/
+hybrid_checkpoints/
+hybrid_fewshot_checkpoints_4_19/
+hybrid_fewshot_checkpoints_4plus/
+multistream_checkpoints/
+pretrain_checkpoints/
+model_export/
+model_export_filtered/
+hybrid_model_export/
+multistream_model_export/
+mediapipe_models/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+
+# Dataset and derived data
+grouped_by_word/
+grouped_output/
+keypoints_final/
+keypoints_normalized/
+keypoints_output/
+slr_pipeline/
+splits/
+splits_fewshot_4_19/
+splits_filtered/
+splits_filtered_4plus/
+splits_multistream/
+splits_multistream_pretrain/
+*.zip
+*.tar
+*.gz
+
+# Dataset manifests and label maps (keep private unless explicitly sanitized)
+*manifest*.csv
+*label_map*.json
+
+# Experiment outputs and reports
+analysis_report/
+fewshot_results_4_19/
+hybrid_fewshot_results_4_19/
+hybrid_fewshot_results_4plus/
+hybrid_results/
+multistream_results/
+pretrain_results/
+results/
+results_filtered/
+runs/
+runs_filtered/
+runs_hybrid/
+
+# Temporary media and raw captures
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.jpg
+*.jpeg
+*.png
